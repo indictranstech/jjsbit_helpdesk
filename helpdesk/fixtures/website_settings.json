@@ -1,0 +1,54 @@
+[
+ {
+  "address": null, 
+  "banner_html": null, 
+  "banner_image": null, 
+  "brand_html": "Jalgaon Janata Sahkari Bank Ltd.", 
+  "copyright": "Jalgaon Janata Sahkari Bank Ltd.", 
+  "disable_signup": 0, 
+  "docstatus": 0, 
+  "doctype": "Website Settings", 
+  "facebook_share": 0, 
+  "favicon": null, 
+  "footer_items": [], 
+  "google_analytics_id": null, 
+  "google_plus_one": 0, 
+  "head_html": null, 
+  "hide_footer_signup": 0, 
+  "home_page": "jalgaon-jilha-bank", 
+  "home_page_is_products": 0, 
+  "linked_in_share": 0, 
+  "modified": "2016-11-28 09:58:37.089421", 
+  "name": "Website Settings", 
+  "sidebar_items": [], 
+  "subdomain": null, 
+  "title_prefix": null, 
+  "top_bar_items": [
+   {
+    "label": "Contact", 
+    "parent_label": null, 
+    "right": 0, 
+    "target": null, 
+    "url": "/contact"
+   }, 
+   {
+    "label": "Blog", 
+    "parent_label": null, 
+    "right": 0, 
+    "target": null, 
+    "url": "/blog"
+   }, 
+   {
+    "label": "Products", 
+    "parent_label": null, 
+    "right": 0, 
+    "target": null, 
+    "url": "/products"
+   }
+  ], 
+  "twitter_share": 0, 
+  "twitter_share_via": null, 
+  "website_theme": "Standard", 
+  "website_theme_image_link": null
+ }
+]

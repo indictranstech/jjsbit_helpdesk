@@ -1,0 +1,71 @@
+<p>Dear {{ user }},</p>
+	<p>A Support Ticket has been escalated, please check the Escalation and Support Ticket details</p>
+<div align="center">
+
+	<p>
+			<table border="1px" width="100%" style="border-collapse: collapse;">
+			<thead>
+				<tr><th colspan="2">Ticket Escalation Details</th></tr>
+			</thead>
+			<tbody>
+				<tr><td style="padding:5px;" colspan="2" align="center">Previously Assigned To</td></tr>
+				<tr>
+					<td style="padding:5px;" align="right">User : </td>
+					<td style="padding:5px;">{{ esc.get("prev_owner") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">User's Role : </td>
+					<td style="padding:5px;">{{ esc.get("prev_role") }}</td>
+				</tr>
+				<tr><td style="padding:5px;" colspan="2" align="center">Currently Escalated To</td></tr>
+				<tr>
+					<td style="padding:5px;" align="right">User : </td>
+					<td style="padding:5px;">{{ esc.get("current_owner") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">User's Role : </td>
+					<td style="padding:5px;">{{ esc.get("current_role") }}</td>
+				</tr>
+<!--			</tbody>
+		</table>
+		<br>
+ 		<table border="1px" width="100%" style="border-collapse: collapse;">
+			<thead>
+				<tr><th colspan="2">Ticket Details</th></tr>
+			</thead>
+			<tbody> -->
+				<tr><td colspan="2" align="center"><b>Ticket Details</b></td></tr>
+				<tr>
+					<td style="padding:5px;" align="right">Ticket ID : </td>
+					<td style="padding:5px;">{{ issue.get("name") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Status : </td>
+					<td style="padding:5px;">{{ issue.get("status") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Department : </td>
+					<td style="padding:5px;">{{ issue.get("department") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Opening Date : </td>
+					<td style="padding:5px;">{{ issue.get("opening_date") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Opening Time : </td>
+					<td style="padding:5px;">{{ issue.get("opening_time") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Subject : </td>
+					<td style="padding:5px;">{{ issue.get("subject") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Raised By : </td>
+					<td style="padding:5px;">{{ issue.get("owner") }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</p>
+</div>
+<p>Thank you,<br>
+Team HelpDesk</p>

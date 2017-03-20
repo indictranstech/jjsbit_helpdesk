@@ -1,0 +1,64 @@
+<p>Dear {{ user }},</p>
+	<p>{{ msg }}</p>
+<div align="center">
+	<p>
+			<table border="1px" width="100%" style="border-collapse: collapse;">
+			<thead>
+				<tr><th colspan="2">Ticket Details</th></tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td width="40%" style="padding:5px;" align="right">Ticket ID : </td>
+					<td style="padding:5px;">{{ issue.get("name") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Subject : </td>
+					<td style="padding:5px;">{{ issue.get("subject") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Raised By : </td>
+					<td style="padding:5px;">{{ issue.get("owner") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Status : </td>
+					<td style="padding:5px;">{{ issue.get("status") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">City : </td>
+					<td style="padding:5px;">{{ issue.get("city") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Building : </td>
+					<td style="padding:5px;">{{ issue.get("building") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Area : </td>
+					<td style="padding:5px;">{{ issue.get("area") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Location Specification : </td>
+					<td style="padding:5px;">{{ issue.get("location_specification") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Service Type : </td>
+					<td style="padding:5px;">{{ issue.get("service_type") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right"> Description : </td>
+					<td style="padding:5px;">{{ issue.get("Description") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Opening Date : </td>
+					<td style="padding:5px;">{{ issue.get("opening_date") }}</td>
+				</tr>
+				<tr>
+					<td style="padding:5px;" align="right">Opening Time : </td>
+					<td style="padding:5px;">{{ issue.get("opening_time") }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</p>
+</div>
+<p>Your Ticket will be Closed in The 24 hrs,<br>
+<p>Thank you,<br>
+Team HelpDesk</p>

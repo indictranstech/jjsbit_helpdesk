@@ -1,0 +1,92 @@
+{% extends "templates/web.html" %}
+{% block title %} Raise Issue {% endblock%}
+
+{% block content %}
+<br>
+<div class="alert alert-danger" role="alert" id="greet" align="center">
+  <span class="sr-only">Error:</span>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading" align="center"><b>Raise Issue</b></div>
+  <div class="panel-body">    
+    <div class="row">
+      <form role="form">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label for="raised_by">Email</label>
+            <span class="input-icon">
+              <input class="form-control" id="raised_by" placeholder="Enter Email Id" type="text"/>
+            <i class="fa icon-envelope"></i></span>
+          </div>
+          <div class="form-group">
+            <label for="service_type">Service Type</label>
+            <select class="form-control" id="service_type"></select>
+          </div>
+          <div class="form-group">
+            <label for="facility">Facility</label>
+            <input class="form-control" id="facility" placeholder="Enter the Facility" type="text">
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <span class="input-icon"> 
+            <input class="form-control" id="location" placeholder="Enter the Location" type="text"/><i class="fa icon-map-marker"></i></span>
+          </div>
+         <div class="form-group">
+            <label for="description">Description</label>
+            <span class="input-icon">
+            <textarea class="form-control" id="description" placeholder="Enter the detail description regarding issue"></textarea>
+            <i class="fa icon-file-text-alt"></i></span>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label for="area">Area</label>
+            <span class="input-icon">
+              <input class="form-control" id="area" placeholder="Enter the Area" type="text"/>
+            <i class="fa icon-building"></i></span>
+          </div>
+          <div class="form-group">
+            <label for="floor">Floor</label>
+            <span class="input-icon">
+              <input class="form-control" id="floor" placeholder="Enter the Floor" type="text"/>
+            <i class="fa icon-building"></i></span>
+          </div>
+          <div class="form-group">
+            <label for="building">Building</label>
+            <span class="input-icon">
+            <input class="form-control" id="building" placeholder="Enter the Building Name" type="text"/>
+            <i class="fa icon-building"></i></span>
+          </div>
+           <div class="form-group">
+            <label for="city">City</label>
+            <span class="input-icon"> 
+            <input class="form-control" id="city" placeholder="Enter the Location" type="text"/><i class="fa icon-star"></i></span>
+          </div>
+        <div class="form-group">
+            <label for="loc_desc">Location Description</label>
+            <span class="input-icon">
+            <input class="form-control" id="loc_desc" placeholder="Enter the Cabin,Desk No,Extension no" type="text"/>
+            <i class="fa icon-desktop"></i></span>
+          </div>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div class="col-lg-12"  align="center">
+      <div class="form-group" style="margin-bottom:0px">
+        <button class="btn btn-primary btn-raise">Raise Support Ticket</button>
+        <button class="btn btn-primary btn-clear">Clear</button>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+{% endblock %}
+{% block script %}
+<script>
+	{% include "templates/includes/raise-issue.js" %}
+</script>
+{% endblock %}
