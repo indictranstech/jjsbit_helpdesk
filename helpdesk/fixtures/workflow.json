@@ -1,0 +1,74 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow", 
+  "document_type": "Issue", 
+  "is_active": 1, 
+  "modified": "2017-05-04 12:49:38.720393", 
+  "name": "Issue", 
+  "states": [
+   {
+    "allow_edit": "Branch Manager", 
+    "doc_status": "0", 
+    "message": null, 
+    "state": "Open", 
+    "update_field": null, 
+    "update_value": null
+   }, 
+   {
+    "allow_edit": "Branch User", 
+    "doc_status": "0", 
+    "message": null, 
+    "state": "Open", 
+    "update_field": null, 
+    "update_value": null
+   }, 
+   {
+    "allow_edit": "Administrator", 
+    "doc_status": "0", 
+    "message": null, 
+    "state": "Sent to Approval", 
+    "update_field": null, 
+    "update_value": null
+   }, 
+   {
+    "allow_edit": "Ticket Approver", 
+    "doc_status": "0", 
+    "message": null, 
+    "state": "Approved", 
+    "update_field": null, 
+    "update_value": null
+   }, 
+   {
+    "allow_edit": "Ticket Approver", 
+    "doc_status": "0", 
+    "message": null, 
+    "state": "Rejected", 
+    "update_field": null, 
+    "update_value": null
+   }
+  ], 
+  "transitions": [
+   {
+    "action": "Approval", 
+    "allowed": "Administrator", 
+    "next_state": "Sent to Approval", 
+    "state": "Open"
+   }, 
+   {
+    "action": "Approve", 
+    "allowed": "Ticket Approver", 
+    "next_state": "Approved", 
+    "state": "Sent to Approval"
+   }, 
+   {
+    "action": "Reject", 
+    "allowed": "Ticket Approver", 
+    "next_state": "Rejected", 
+    "state": "Sent to Approval"
+   }
+  ], 
+  "workflow_name": "Issue", 
+  "workflow_state_field": "workflow_state"
+ }
+]

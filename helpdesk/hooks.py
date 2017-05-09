@@ -115,7 +115,7 @@ scheduler_events = {
 	# ]
 }
 
-fixtures = ["Property Setter", "Custom Field", "Website Settings"]
+fixtures = ["Property Setter", "Custom Field", "Website Settings", "Role", "Workflow State", "Workflow Action", "Workflow"]
 
 # Testing
 # -------

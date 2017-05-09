@@ -36,3 +36,8 @@ def get_issue_query(user):
 		return """\
 		 (tabIssue.branch = '{branch}' and (tabIssue.owner = '{user}' or tabIssue.raised_by = '{user}'))
 		 """.format(user=frappe.db.escape(user), branch=branch)
+
+	elif "Ticket Approver" in roles:
+		return """\
+		(tabIssue.is_special_ticket = '1') """
+
