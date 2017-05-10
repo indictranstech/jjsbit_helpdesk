@@ -31,6 +31,13 @@ frappe.ui.form.on("Issue", {
 		else if((in_list(user_roles, "Ticket Approver")) && (frm.doc.workflow_state == "Open") && (frm.doc.is_special_ticket)){
 			cur_frm.set_read_only()
 		}
+
+		field_list =  ["phone_number", "status"]
+		if((in_list(user_roles, "Ticket Approver"))){
+			$.each(field_list, function(idx, field) {
+				cur_frm.toggle_enable(field, false)
+			})
+		}
 	},
 
 	validate: function(frm){
@@ -44,7 +51,7 @@ frappe.ui.form.on("Issue", {
 				cur_frm.set_value("workflow_state","Open");
 				refresh_field('workflow_state')
 				cur_frm.reload_doc();
-				frappe.throw(__("Only Special Tickets goes to Authorized User Approval."));
+				frappe.throw(__("Only 'Special Tickets' goes to authorized user for approval."));
 				return;
 			}
 		}
