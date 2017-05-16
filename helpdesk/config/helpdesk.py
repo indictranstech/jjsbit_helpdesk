@@ -62,6 +62,11 @@ def get_data():
 					"type": "doctype",
 					"name": "Ticket Escalation Settings",
 					"description": _("Support Ticket Escalation Settings.")
+				},
+				{
+					"type": "doctype",
+					"name": "CC User Settings",
+					"description": _("CC User Settings.")
 				}
 			]
 		},
