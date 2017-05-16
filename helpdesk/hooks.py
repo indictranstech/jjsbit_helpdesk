@@ -83,9 +83,9 @@ doc_events = {
 		# "on_trash": "helpdesk.helpdesk.doctype.ticket_escalation_history.ticket_escalation_history.todo_on_trash",
 		# "autoname": "helpdesk.utils.autoname_todo"
 	},
-	# "User": {
-	# 	"validate": "helpdesk.py.user.validate_user"
-	# },
+	"User": {
+		"validate": "helpdesk.py.user.validate_user"
+	},
 	"DocShare": {
 		"validate": "helpdesk.py.docshare.validate_docshare",
 	}
@@ -115,7 +115,7 @@ scheduler_events = {
 	# ]
 }
 
-fixtures = ["Property Setter", "Custom Field", "Website Settings"]
+fixtures = ["Property Setter", "Custom Field", "Website Settings", "Role", "Workflow State", "Workflow Action", "Workflow"]
 
 # Testing
 # -------

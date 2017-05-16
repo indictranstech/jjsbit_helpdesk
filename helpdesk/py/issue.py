@@ -71,6 +71,35 @@ def validate(doc, method):
 		doc.add_comment("Email", comment)
 		doc.old_resolution_details = doc.resolution_details
 
+	send_to_approval_notification(doc, method)
+	approved_notification(doc, method)
+	rejection_notification(doc, method)
+
+def send_to_approval_notification(doc, method):
+	if doc.workflow_state == "Sent to Approval" and doc.resolution_details and doc.approval_mail==0:
+		email = frappe.db.get_single_value("CC User Settings", "email_id")
+		if email :
+			msg = """ Dear '%s, <br><br> Special Ticket - '%s' is Raised By '%s' related to Branch - '%s' and Category - '%s'. Please verify this ticket and do appropriate action against it. <br><br> Thank You, <br> JJSB Helpdesk Ticketing System"""%(email, doc.name, doc.raised_email, doc.branch, doc.department)
+			doc.approval_mail = 1
+			frappe.sendmail(recipients=email, subject="Special Ticket Approval Notification", content=msg)
+
+def approved_notification(doc, method):
+	if doc.workflow_state == "Approved" and doc.resolution_details and doc.approved_mail==0:
+		email = frappe.db.get_single_value("CC User Settings", "email_id")
+		if email :
+			msg = """ Dear '%s, <br><br> Special Ticket - '%s' is Approved By Authorized User - '%s' related to Branch - '%s' and Category - '%s'. <br><br> Thank You, <br> JJSB Helpdesk Ticketing System"""%(email, doc.name, frappe.session.user, doc.branch, doc.department)
+			doc.approved_mail = 1
+			frappe.sendmail(recipients=email, subject="Approved Special Ticket Notification", content=msg)
+
+def rejection_notification(doc, method):
+	if doc.workflow_state == "Rejected" and doc.resolution_details and doc.rejected_mail==0:
+		email = frappe.db.get_single_value("CC User Settings", "email_id")
+		if email :
+			msg = """ Dear '%s, <br><br> Special Ticket - '%s' is Rejected By Authorized User - '%s' related to Branch - '%s' and Category - '%s'. <br><br> Thank You, <br> JJSB Helpdesk Ticketing System"""%(email, doc.name, frappe.session.user, doc.branch, doc.department)
+			doc.rejected_mail = 1
+			frappe.sendmail(recipients=email, subject="Rejected Special Ticket Notification", content=msg)
+
+
 @frappe.whitelist()
 def fetch_values(raised_email):
 	branch = phone_number = {}

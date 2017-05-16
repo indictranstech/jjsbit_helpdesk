@@ -1,0 +1,289 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:06:42.190611", 
+  "name": "System Manager", 
+  "role_name": "System Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:06:42.193014", 
+  "name": "All", 
+  "role_name": "All"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:06:42.195145", 
+  "name": "Administrator", 
+  "role_name": "Administrator"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:06:42.197466", 
+  "name": "Guest", 
+  "role_name": "Guest"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:06:47.164729", 
+  "name": "Website Manager", 
+  "role_name": "Website Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:06:49.604260", 
+  "name": "Blogger", 
+  "role_name": "Blogger"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:07:06.033507", 
+  "name": "Sales User", 
+  "role_name": "Sales User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:07:06.051493", 
+  "name": "Accounts User", 
+  "role_name": "Accounts User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:07:06.054442", 
+  "name": "Purchase User", 
+  "role_name": "Purchase User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:07:08.402653", 
+  "name": "Support User", 
+  "role_name": "Support User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:07:18.645666", 
+  "name": "Report Manager", 
+  "role_name": "Report Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:17.253472", 
+  "name": "Customer", 
+  "role_name": "Customer"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:17.460656", 
+  "name": "Accounts Manager", 
+  "role_name": "Accounts Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:20.912524", 
+  "name": "Sales Master Manager", 
+  "role_name": "Sales Master Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:25.949104", 
+  "name": "Employee", 
+  "role_name": "Employee"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:26.030394", 
+  "name": "Stock User", 
+  "role_name": "Stock User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:27.516995", 
+  "name": "Auditor", 
+  "role_name": "Auditor"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:29.869813", 
+  "name": "Supplier", 
+  "role_name": "Supplier"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:32.982692", 
+  "name": "Purchase Manager", 
+  "role_name": "Purchase Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:33.159229", 
+  "name": "Purchase Master Manager", 
+  "role_name": "Purchase Master Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:45.966380", 
+  "name": "Sales Manager", 
+  "role_name": "Sales Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:09:52.589080", 
+  "name": "Newsletter Manager", 
+  "role_name": "Newsletter Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:00.488196", 
+  "name": "Manufacturing Manager", 
+  "role_name": "Manufacturing Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:02.974709", 
+  "name": "Stock Manager", 
+  "role_name": "Stock Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:07.406920", 
+  "name": "Quality Manager", 
+  "role_name": "Quality Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:09.977911", 
+  "name": "Projects User", 
+  "role_name": "Projects User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:12.001397", 
+  "name": "Projects Manager", 
+  "role_name": "Projects Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:19.202741", 
+  "name": "Maintenance User", 
+  "role_name": "Maintenance User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:22.895735", 
+  "name": "Maintenance Manager", 
+  "role_name": "Maintenance Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:30.286866", 
+  "name": "Item Manager", 
+  "role_name": "Item Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:42.718371", 
+  "name": "HR User", 
+  "role_name": "HR User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:43.658870", 
+  "name": "HR Manager", 
+  "role_name": "HR Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:46.490529", 
+  "name": "Expense Approver", 
+  "role_name": "Expense Approver"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:10:51.543589", 
+  "name": "Leave Approver", 
+  "role_name": "Leave Approver"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:11:05.122133", 
+  "name": "Branch User", 
+  "role_name": "Branch User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:11:05.248227", 
+  "name": "Branch Manager", 
+  "role_name": "Branch Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:11:05.371269", 
+  "name": "Support Team", 
+  "role_name": "Support Team"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:11:14.268617", 
+  "name": "Manufacturing User", 
+  "role_name": "Manufacturing User"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 14:12:18.076949", 
+  "name": "Analytics", 
+  "role_name": "Analytics"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-03-20 15:42:39.144079", 
+  "name": "Admin", 
+  "role_name": "admin"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Role", 
+  "modified": "2017-05-04 12:48:03.911115", 
+  "name": "Ticket Approver", 
+  "role_name": "Ticket Approver"
+ }
+]
