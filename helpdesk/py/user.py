@@ -20,13 +20,12 @@ def validate_user(doc, method):
 	# 	frappe.msgprint("[Warning] Their is no Department Head for the <b>{0}</b> Department<br>\
 	# 		Please set the Department Head for <b>{0}</b>".format(doc.department))
 
-
-	query = """ SELECT name FROM `tabUser` WHERE name IN (SELECT parent FROM `tabUserRole` WHERE role='Ticket Approver')"""
+	query = """ SELECT name FROM `tabUser` WHERE name IN (SELECT parent FROM `tabUserRole` WHERE role='Ticket Approver') and name != 'Administrator' """
 	record = frappe.db.sql(query, as_list=True)
 	
 	tick_approver = [ch.role for ch in doc.user_roles if ch.role == "Ticket Approver"]
 	record = [r[0] for r in record]
-	if record and tick_approver and doc.name not in record:
+	if record and tick_approver and doc.name not in record and doc.name != "Administrator":
 		frappe.throw("Their can be only one Ticket Approver..")
 
 	
