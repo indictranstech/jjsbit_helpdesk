@@ -256,7 +256,7 @@ def send_new_ticket_notification(doc):
 		1:["Ticket ID", doc.name],
 		2:["Department", doc.department],
 		3:["Opening Date", doc.opening_date],
-		4:["Opeing Time", doc.opening_time],
+		4:["Opening Time", doc.opening_time],
 		5:["Subject", doc.subject],
 		6:["Raised By", doc.raised_by]
 	}

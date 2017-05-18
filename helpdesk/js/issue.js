@@ -25,7 +25,7 @@ frappe.ui.form.on("Issue", {
 		if((in_list(user_roles, "Branch Manager") || in_list(user_roles, "Branch User")) && (frm.doc.workflow_state == "Sent to Approval" || frm.doc.workflow_state == "Approved" || frm.doc.workflow_state == "Rejected")){
 			cur_frm.set_read_only()	
 		}
-		else if((in_list(user_roles, "Administrator")) && (frm.doc.workflow_state == "Sent to Approval" || frm.doc.workflow_state=="Approved" || frm.doc.workflow_state=="Rejected") && (frm.doc.is_special_ticket) ){
+		else if((in_list(user_roles,"Admin") || in_list(user_roles,"System Manager")) && (frm.doc.workflow_state == "Sent to Approval" || frm.doc.workflow_state=="Approved" || frm.doc.workflow_state=="Rejected") && (frm.doc.is_special_ticket) ){
 			cur_frm.set_read_only()
 		}
 		else if((in_list(user_roles, "Ticket Approver")) && (frm.doc.workflow_state == "Open") && (frm.doc.is_special_ticket)){
@@ -41,7 +41,7 @@ frappe.ui.form.on("Issue", {
 	},
 
 	validate: function(frm){
-		if(in_list(user_roles, "Administrator") && frm.doc.is_special_ticket == 0 && frm.doc.workflow_state == "Sent to Approval"){
+		if((in_list(user_roles,"Admin") || in_list(user_roles,"System Manager")) && frm.doc.is_special_ticket == 0 && frm.doc.workflow_state == "Sent to Approval"){
 			if(!frm.doc.resolution_details){
 				cur_frm.set_value("workflow_state","Open");
 				refresh_field('workflow_state')
@@ -55,7 +55,7 @@ frappe.ui.form.on("Issue", {
 				return;
 			}
 		}
-		if(in_list(user_roles, "Administrator") && frm.doc.is_special_ticket == 1 && frm.doc.workflow_state == "Sent to Approval"){
+		if((in_list(user_roles,"Admin") || in_list(user_roles,"System Manager")) && frm.doc.is_special_ticket == 1 && frm.doc.workflow_state == "Sent to Approval"){
 			if(!frm.doc.resolution_details){
 				cur_frm.set_value("workflow_state","Open");
 				refresh_field('workflow_state')

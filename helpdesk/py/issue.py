@@ -44,7 +44,7 @@ def validate(doc, method):
 			2:["Branch", doc.branch],
 			3:["Category", doc.department],
 			4:["Opening Date", doc.opening_date],
-			5:["Opeing Time", doc.opening_time],
+			5:["Opening Time", doc.opening_time],
 			6:["Question", doc.question],
 			7:["Raised By", doc.raised_by]
 		}
