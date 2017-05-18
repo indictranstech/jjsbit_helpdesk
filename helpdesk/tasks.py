@@ -77,7 +77,7 @@ FROM tabIssue LEFT JOIN tabToDo ON tabIssue.name=tabToDo.reference_name where ta
                 2:["Branch", tkt.get("branch")],
                 3:["Category", tkt.get("department")],
                 4:["Opening Date", tkt.get("opening_date")],
-                5:["Opeing Time", tkt.get("opening_time")],
+                5:["Opening Time", tkt.get("opening_time")],
                 6:["Question", tkt.get("question")],
                 7:["Raised By", tkt.get("raised_by")],
                 8:["Assigned To",tkt.get("owner")]
